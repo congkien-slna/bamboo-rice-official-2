@@ -1,1 +1,0 @@
-Bamboo Rice source code.
