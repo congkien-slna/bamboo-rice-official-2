@@ -418,19 +418,19 @@ section {
     display: block;
 }
 
-.food-item-wrap.salad>div.salad-type {
+.food-item-wrap.tamthai>div.tamthai-type {
     display: block;
 }
 
-.food-item-wrap.lorem>div.lorem-type {
+.food-item-wrap.nepcai>div.nepcai-type {
     display: block;
 }
 
-.food-item-wrap.ipsum>div.ipsum-type {
+.food-item-wrap.gaolut>div.gaolut-type {
     display: block;
 }
 
-.food-item-wrap.dolor>div.dolor-type {
+.food-item-wrap.huonglai>div.huonglai-type {
     display: block;
 }
 
