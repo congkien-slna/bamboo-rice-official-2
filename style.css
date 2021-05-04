@@ -123,6 +123,37 @@ section {
     padding: 9rem 0;
 }
 
+.sci {
+    z-index: 2;
+    color: var(--primary-color);
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.sci i {
+    font-size: 33px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+    .sci i {
+    font-size: 20px;
+}
+}
+
+.sci i:hover {
+    transform: rotate(30deg);
+}
+
 .slogan {
     text-align: left;
 }
