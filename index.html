@@ -13,6 +13,10 @@
           rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 
 <body>
@@ -77,9 +81,12 @@
             </a>
         </div>
         <div class="right-menu">
-            <div class="cart-btn">
-                <i class='bx bx-cart-alt'></i>
-            </div>
+            <a href="#payment-section">
+                <div class="cart-btn">
+                    <i class='bx bx-cart-alt'></i>
+                    <i class="gh-cart-n total-count" aria-hidden="true">0</i>
+                </div>
+            </a>
         </div>
     </div>
 </div>
@@ -87,10 +94,10 @@
 <!-- SECTION SOCIAL ICON -->
 <section>
     <div class="sci">
-        <a href="https://www.youtube.com/"><i class="bx bxl-youtube"></i></a>
         <a href="https://www.messenger.com/"><i class="bx bxl-messenger"></i></a>
         <a href="https://www.whatsapp.com/"><i class="bx bxl-whatsapp"></i></a>
-        <a href="https://www.twitter.com/"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.skype.com/"><i class="bx bxl-skype"></i></a>
+        <a href="https://zalo.me/pc/"><i class="bx bxs-zap"></i></a>
     </div>
 </section>
 <!-- END SECTION SOCIAL ICON -->
@@ -110,8 +117,15 @@
                     </p>
                     <div class="left-to-right play-on-scroll delay-4">
                         <button>
-                            Đặt hàng
+                            <a href="#food-menu-section">
+                                Đặt hàng
+                            </a>
                         </button>
+                    </div>
+                    <div class="left-to-right play-on-scroll delay-6">
+                        <iframe width="615" height="315"
+                                src="https://www.youtube.com/embed/C47P3iWQXoE?controls=0"></iframe>
+                        </iframe>
                     </div>
                 </div>
             </div>
@@ -188,7 +202,7 @@
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img">
                             <div class="img-holder bg-img"
-                                 style="background-image: url('assets/gao-tam-thai-do-1.jpg');"></div>
+                                 style="background-image: url('assets/tamthai1.jpg');"></div>
                         </div>
                         <div class="item-info">
                             <div>
@@ -196,11 +210,12 @@
                                     Tám thái đỏ loại 1
                                 </h3>
                                 <span>
-                                        120k / KG
+                                        120k / túi 5KG
                                     </span>
                             </div>
-                            <div class="cart-btn">
+                            <div class="cart-btn add-to-cart" data-name="tamthai1" data-price="120">
                                 <i class='bx bx-cart-alt'></i>
+                                <i class="gh-cart-n tamthai1">0</i>
                             </div>
                         </div>
                     </div>
@@ -210,7 +225,7 @@
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img">
                             <div class="img-holder bg-img"
-                                 style="background-image: url('assets/nep-cai-hoa-vang-2.jpg');">
+                                 style="background-image: url('assets/nepcai2.jpg');">
                             </div>
                         </div>
                         <div class="item-info">
@@ -219,11 +234,12 @@
                                     Nếp cái hoa vàng loại 1
                                 </h3>
                                 <span>
-                                        120k / KG
+                                        120k / túi 5KG
                                     </span>
                             </div>
-                            <div class="cart-btn">
+                            <div class="cart-btn add-to-cart" data-name="nepcai1" data-price="120">
                                 <i class='bx bx-cart-alt'></i>
+                                <i class="gh-cart-n nepcai1" aria-hidden="true">0</i>
                             </div>
                         </div>
                     </div>
@@ -233,7 +249,7 @@
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img">
                             <div class="img-holder bg-img"
-                                 style="background-image: url('assets/gao-lut-1.jpg');"></div>
+                                 style="background-image: url('assets/gaolut1.jpg');"></div>
                         </div>
                         <div class="item-info">
                             <div>
@@ -241,11 +257,12 @@
                                     Gạo lứt loại 1
                                 </h3>
                                 <span>
-                                        200k / KG
+                                        200k / túi 5 KG
                                     </span>
                             </div>
-                            <div class="cart-btn">
+                            <div class="cart-btn add-to-cart" data-name="gaolut1" data-price="200">
                                 <i class='bx bx-cart-alt'></i>
+                                <i class="gh-cart-n gaolut1" aria-hidden="true">0</i>
                             </div>
                         </div>
                     </div>
@@ -255,7 +272,7 @@
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img">
                             <div class="img-holder bg-img"
-                                 style="background-image: url(assets/huong-lai-1.png);"></div>
+                                 style="background-image: url(assets/huonglai1.jpg);"></div>
                         </div>
                         <div class="item-info">
                             <div>
@@ -263,11 +280,12 @@
                                     Hương lài loại 1
                                 </h3>
                                 <span>
-                                    130k / KG
+                                    130k / túi 5KG
                                     </span>
                             </div>
-                            <div class="cart-btn">
+                            <div class="cart-btn add-to-cart" data-name="huonglai1" data-price="130">
                                 <i class="bx bx-cart-alt"></i>
+                                <i class="gh-cart-n huonglai1" aria-hidden="true">0</i>
                             </div>
                         </div>
                     </div>
@@ -277,7 +295,7 @@
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img">
                             <div class="img-holder bg-img"
-                                 style="background-image: url('assets/nep-cai-hoa-vang-1.jpg');"></div>
+                                 style="background-image: url('assets/nepcai1.jpg');"></div>
                         </div>
                         <div class="item-info">
                             <div>
@@ -285,11 +303,12 @@
                                     Nếp cái hoa vàng loại 2
                                 </h3>
                                 <span>
-                                        100k / KG
+                                        100k / túi 5KG
                                     </span>
                             </div>
-                            <div class="cart-btn">
+                            <div class="cart-btn add-to-cart" data-name="nepcai2" data-price="100">
                                 <i class='bx bx-cart-alt'></i>
+                                <i class="gh-cart-n nepcai2" aria-hidden="true">0</i>
                             </div>
                         </div>
                     </div>
@@ -299,7 +318,7 @@
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img">
                             <div class="img-holder bg-img"
-                                 style="background-image: url('assets/gao-lut-2.jpg');"></div>
+                                 style="background-image: url('assets/gaolut2.jpg');"></div>
                         </div>
                         <div class="item-info">
                             <div>
@@ -307,11 +326,12 @@
                                     Gạo lứt loại 2
                                 </h3>
                                 <span>
-                                        180k / KG
+                                        180k / túi 5KG
                                     </span>
                             </div>
-                            <div class="cart-btn">
+                            <div class="cart-btn add-to-cart" data-name="gaolut2" data-price="180">
                                 <i class='bx bx-cart-alt'></i>
+                                <i class="gh-cart-n gaolut2" aria-hidden="true">0</i>
                             </div>
                         </div>
                     </div>
@@ -321,7 +341,7 @@
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img">
                             <div class="img-holder bg-img"
-                                 style="background-image: url('assets/gao-lut-3.jpg');"></div>
+                                 style="background-image: url('assets/gaolut3.jpg');"></div>
                         </div>
                         <div class="item-info">
                             <div>
@@ -329,11 +349,12 @@
                                     Gạo lứt loại 3
                                 </h3>
                                 <span>
-                                        160k / KG
+                                        160k / túi 5KG
                                     </span>
                             </div>
-                            <div class="cart-btn">
+                            <div class="cart-btn add-to-cart" data-name="gaolut3" data-price="160">
                                 <i class='bx bx-cart-alt'></i>
+                                <i class="gh-cart-n gaolut3" aria-hidden="true">0</i>
                             </div>
                         </div>
                     </div>
@@ -343,19 +364,20 @@
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img">
                             <div class="img-holder bg-img"
-                                 style="background-image: url('assets/huong-lai-2.jpeg');"></div>
+                                 style="background-image: url('assets/huonglai2.jpg');"></div>
                         </div>
                         <div class="item-info">
                             <div>
                                 <h3>
-                                    Hương lài loại 1
+                                    Hương lài loại 2
                                 </h3>
                                 <span>
-                                        115k / KG
+                                        115k / túi 5KG
                                     </span>
                             </div>
-                            <div class="cart-btn">
+                            <div class="cart-btn add-to-cart" data-name="huonglai2" data-price="115">
                                 <i class='bx bx-cart-alt'></i>
+                                <i class="gh-cart-n huonglai2" aria-hidden="true">0</i>
                             </div>
                         </div>
                     </div>
@@ -365,6 +387,63 @@
     </div>
 </section>
 <!-- END FOOD MENU SECTION -->
+<!-- PAYMENT SECTION -->
+<section class="align-items-center bg-img bg-img-fixed" id="payment-section"
+         style="background-image: url(assets/katherine-chase-4MMK78S7eyk-unsplash.jpg);">
+    <div>
+        <div class='window'>
+            <div class='order-info'>
+                <div class='order-info-content'>
+                    <h2 class="order">Đơn hàng</h2>
+                    <div class='line'></div>
+                    <table class='show-cart'>
+                    </table>
+                    <div class='line'></div>
+                    <div class="order">Tổng cộng : <span class="total-cart"></span></div>
+                </div>
+            </div>
+            <div class='credit-info'>
+                <div class='credit-info-content'>
+                    <table class='half-input-table'>
+                        <tr>
+                            <td class="abc">Thanh toán qua</td>
+                            <td>
+                                <div class='dropdown' id='card-dropdown'>
+                                    <div class='dropdown-btn' id='current-card'>Momo</div>
+                                    <div class='dropdown-select'>
+                                        <ul>
+                                            <li>Zalo Pay</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class='half-input-table'>
+                        <tr>
+                            <td>
+                                <img src='assets/qr-momo.png' height="100%" width="100%"  class='credit-card-image' id='credit-card-image'></img>
+                            </td>
+                            <td>
+                                <span> Phạm Hoàng Hải </span>
+                                <span> 0901848000 </span>
+                            </td>
+                        </tr>
+                    </table>
+                    <br><br>
+                    Họ tên
+                    <input class='input-field' id="nameInput"></input>
+                    Địa chỉ
+                    <input class='input-field' id='addressInput'></input>
+                    Số điện thoại
+                    <input class='input-field' id='phoneNumberInput'></input>
+                    <button class='pay-btn' onclick="onOrder()">Đã hoàn tất thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- PAYMENT SECTION -->
 <!-- TESTIMONIAL SECTION -->
 <section id="testimonial">
     <div class="container">
@@ -495,7 +574,6 @@
     </div>
 </section>
 <!-- END FOOTER SECTION -->
-
 <script src="index.js"></script>
 </body>
 
