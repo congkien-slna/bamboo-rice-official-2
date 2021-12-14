@@ -156,7 +156,7 @@ function onOrder(){
         Host : "smtp.google.com",
         Username : "uatb0426@gmail.com",
         Password : "gotadi2021",
-        To : 'kientc1995@gmail.com',
+        To : 'hai.winpack.com@gmail.com',
         From : "uatb0426@gmail.com",
         Subject : "Đơn hàng",
         Body : "Khách hàng : " + name + ' - ' + address + ' - ' + phoneNumber + '   ---   ' + orderData

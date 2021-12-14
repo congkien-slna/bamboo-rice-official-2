@@ -1,7 +1,6 @@
 /* payment */
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
 body,html {
-    height:100%;
     margin:0;
     font-family:lato;
 }
@@ -1056,4 +1055,14 @@ section {
     .h-xs {
         display: none;
     }
+}
+
+.vo-gao {
+    width: 800px;
+    height: 600px;
+}
+
+.bamboo-logo-css {
+    border-radius: 20px;
+    width: 130px;
 }
